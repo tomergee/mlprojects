@@ -1,0 +1,23 @@
+# Git files
+.git
+.gitignore
+
+# Go cache (dependencies are handled by go mod download in Dockerfile)
+vendor/
+
+# Test files and assets not needed for runtime
+*_test.go
+testdata/
+
+# Markdown files
+*.md
+
+# Local build artifacts or environment files
+.env
+*.out
+mcp_server # Exclude the binary if built locally from being copied
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.iml
